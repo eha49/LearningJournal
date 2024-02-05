@@ -11,8 +11,9 @@ function handleClick(e) {
 
     if (e.target.id === 'btn-expand-posts') {
         hiddenPosts.classList.toggle('hidden');
-    }
 
-    (!hiddenPosts.classList.length) && (btnExpandPosts.textContent = 'Show Less');
-    
+        (!hiddenPosts.classList.length) ? (btnExpandPosts.textContent = 'Show Less') : (btnExpandPosts.textContent = 'View More');
+    }
 }
+
+    
