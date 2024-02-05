@@ -93,15 +93,18 @@ ul > li {
 .blog-post-subtitle,
 .blog-post-body {
     margin: 0;
+    color: #505050;
 }
 
 .blog-post-subtitle {
     font-size: 0.9rem;
+    color: #000;
 }
 
 .blog-post-title {
     margin: 0.2em 0;
     font-size: 1.5rem;
+    color: #141414;
 }
 
 /* Buttons & Links */
@@ -111,7 +114,7 @@ ul > li {
     margin-left: auto;
 }
 
-.close-btn {
+.close-menu-btn {
     margin: 0.2em 0.4em 0 0;
     text-align: right;
     color: #ececec;
@@ -125,8 +128,21 @@ ul > li {
     text-decoration: none;
 }
 
+#btn-expand-posts {
+    display: block;
+    margin: 0 auto;
+    color: #000;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    border: none;
+    background-color: inherit;
+}
+
 #menu-btn:hover,
-.close-btn:hover,
+#btn-expand-posts:hover,
+.close-menu-btn:hover,
 .nav-link:hover,
 .nav-link:active {
     cursor: pointer;
