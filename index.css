@@ -37,9 +37,8 @@ header {
 
 nav {
     background-color: #202020;
-    width: 35%;
-    max-width: 150px;
-    height: 180px;
+    width: 150px;
+    height: 60vh;
     position: absolute; 
     top: 0;
     right: 0;
