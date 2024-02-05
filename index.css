@@ -51,7 +51,8 @@ nav > ul {
 }
 
 ul > li {
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #ececec;
 }
 
 .hero {
@@ -77,9 +78,31 @@ ul > li {
     margin: 0.4em 0;
 }
 
+.blog-post {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.2em 0;
+}
 
+.blog-post-img {
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+}
 
+.blog-post-subtitle,
+.blog-post-body {
+    margin: 0;
+}
 
+.blog-post-subtitle {
+    font-size: 0.9rem;
+}
+
+.blog-post-title {
+    margin: 0.2em 0;
+    font-size: 1.5rem;
+}
 
 /* Buttons & Links */
 
@@ -96,19 +119,16 @@ ul > li {
     font-size: 1.6rem;
 }
 
-#menu-btn:hover,
-.close-btn:hover {
-    cursor: pointer;
-    opacity: 0.7;
-}
-
 .nav-link {
     color: #ececec;
     font-size: 1.1rem;
     text-decoration: none;
 }
 
+#menu-btn:hover,
+.close-btn:hover,
 .nav-link:hover,
 .nav-link:active {
-    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0.7;
 }
