@@ -1,0 +1,44 @@
+body {
+    color: #151515;
+}
+/* Utility Class */
+
+.size {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Layout */
+
+.avatar {
+    display: block;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+}
+
+.intro-title {
+    font-size: 1.9rem;
+}
+
+.intro-body {
+    margin: 0 0 1.8em;
+}
+
+.intro-body,
+.article-heading,
+.article-body {
+    font-size: 1.1rem;
+}
+
+.article-heading {
+    margin-top: 0;
+}
+
+.recent-posts {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000;
+    margin: 1.5em;
+}

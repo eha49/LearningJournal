@@ -153,7 +153,7 @@ footer {
 
 #btn-expand-posts {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 2em;
     color: #000;
     font-family: inherit;
     font-size: 1rem;

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="about.css">
+    <title>About Me</title>
+</head>
+<body>
+    <header class="flex">
+        <img src="./images/site-logo.svg" alt="The site icon" class="site-logo">
+        <p class="site-title">My Learning Journal</p>
+        <img src="./images/bars-icon.svg" aria-label="Menu button" id="menu-btn">
+        <nav class="hidden" id="menu-bar">
+            <p class="close-menu-btn" id="close-menu-btn" aria-label="Close button">X</p>
+            <ul>
+                <li><a href="./index.html" class="nav-link hover">Home</a></li>
+                <li><a href="#" class="nav-link border">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="size">
+            <img src="./images/avatar.jpg" alt="Avatar of Batman" class="avatar">
+            <h1 class="intro-title">Hi there! My name is Batman and welcome to my learning journal.</h1>
+            <p class="intro-body">After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+        </section>
+        
+        <article class="size">
+            <h2 class="article-heading">How I stay committed to learning</h2>
+            <p class="article-body">I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.</p>
+            <p class="article-body">While that was fun, I felt like it would be helpful to share what I was learning and most things about my journey with the world.</p>
+        </article>
+        
+        <article class="size">
+            <h2 class="article-heading">How I got started</h2>
+            <p class="article-body">I started simple and gradually grew my learning journal site. I would take notes about what I was learning. After each learning session, I'd use my notes to not only reflect on what I learned but also write short summaries of what I learned using my own words</p>
+            <p class="article-body">That helped me grok what I was learning, and I realized that posting my learning summaries was also helping others learn and stay motivated.</p>
+        </article>
+        <p class="recent-posts">Recent Posts</p>
+
+        <article class="blog-post">
+            <img src="./images/blog-one.jpg" alt="A random image" class="blog-post-img" loading="lazy">
+            <p class="blog-post-subtitle">February 06, 2024</p>
+            <h2 class="blog-post-title">Blog One</h2>
+            <p class="blog-post-body">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several
+                months of learning in the
+                Frontend Developer Career Path.</p>
+        </article>
+        
+        <article class="blog-post">
+            <img src="./images/blog-two.jpg" alt="A random image" class="blog-post-img" loading="lazy">
+            <p class="blog-post-subtitle">February 06, 2024</p>
+            <h2 class="blog-post-title">Blog Two</h2>
+            <p class="blog-post-body">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several
+                months of learning in the Frontend Developer Career Path.</p>
+        </article>
+        
+        <article class="blog-post">
+            <img src="./images/blog-three.jpg" alt="A random image" class="blog-post-img" loading="lazy">
+            <p class="blog-post-subtitle">February 06, 2024</p>
+            <h2 class="blog-post-title">Blog Three</h2>
+            <p class="blog-post-body">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several
+                months of learning in the Frontend Developer Career Path.</p>
+        </article>
+        
+        <section class="hidden" id="hidden-posts">
+            <article class="blog-post">
+                <img src="./images/blog-four.jpg" alt="A random image" class="blog-post-img" loading="lazy">
+                <p class="blog-post-subtitle">February 06, 2024</p>
+                <h2 class="blog-post-title">Blog Four</h2>
+                <p class="blog-post-body">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After
+                    several months of learning in the Frontend Developer Career Path.</p>
+            </article>
+        
+            <article class="blog-post">
+                <img src="./images/blog-five.jpg" alt="A random image" class="blog-post-img" loading="lazy">
+                <p class="blog-post-subtitle">February 06, 2024</p>
+                <h2 class="blog-post-title">Blog Five</h2>
+                <p class="blog-post-body">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After
+                    several months of learning in the Frontend Developer Career Path.</p>
+            </article>
+        
+            <article class="blog-post">
+                <img src="./images/blog-six.jpg" alt="A random image" class="blog-post-img" loading="lazy">
+                <p class="blog-post-subtitle">February 06, 2024</p>
+                <h2 class="blog-post-title">Blog Six</h2>
+                <p class="blog-post-body">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After
+                    several months of learning in the Frontend Developer Career Path.</p>
+            </article>
+        </section>
+        <button id="btn-expand-posts">View More</button>
+    </main>
+    <footer>
+        <h3 class="footer-title">My Learning Journal</h3>
+        <p class="copyright">Copyright &copy 2024</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
