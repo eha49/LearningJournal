@@ -16,4 +16,9 @@ function handleClick(e) {
     }
 }
 
-    
+window.addEventListener('resize', function () {
+    if (this.window.innerWidth >= 480) {
+        menuBar.className = ''
+    }
+    else { menuBar.className = 'hidden'}
+})

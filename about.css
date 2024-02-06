@@ -11,11 +11,16 @@ body {
 
 /* Layout */
 
+.first-section {
+    padding-top: 2em;
+}
+
 .avatar {
     display: block;
     width: 148px;
     height: 148px;
     border-radius: 50%;
+    margin-top: 1em;
 }
 
 .intro-title {

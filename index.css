@@ -38,6 +38,7 @@ header {
 .site-title {
     margin-left: 10px;
     font-weight: 700;
+    color: #0e0e0e;
 }
 
 nav {
@@ -90,6 +91,7 @@ ul > li {
 
 .blog-post-img {
     width: 100%;
+    aspect-ratio: 1.5 / 1;
     display: block;
     margin-bottom: 1em;
 }
@@ -179,4 +181,61 @@ footer {
 .hover:active {
     cursor: pointer;
     opacity: 0.7;
+}
+
+/* Media Queries */
+
+@media (min-width: 480px) {
+    main {
+        background-color: #fafafa;
+    }
+
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1em 0;
+    }
+
+    #hidden-posts {
+        display: flex;
+    }
+
+    .blog-post {
+        width: 30%;
+    }
+
+    #menu-btn,
+    .close-menu-btn,
+    #btn-expand-posts {
+        display: none;
+    }
+
+    nav {
+        background-color: inherit;
+        position: static;
+        width: 210px;
+        height: auto;
+        margin-left: auto;
+    }
+
+    nav > ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    ul > li {
+        padding-top: 0.3em;
+    }
+
+    .nav-link {
+        color: #090909;
+        font-size: 1rem;
+    }
+
+    .border {
+        border-bottom: 1px solid #090909;
+    }
 }
