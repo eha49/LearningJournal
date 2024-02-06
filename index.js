@@ -1,24 +1,32 @@
 const menuBar = document.getElementById('menu-bar');
-const hiddenPosts = document.getElementById('hidden-posts');
+const hiddenPosts = document.getElementsByClassName('hidden');
 const btnExpandPosts = document.getElementById('btn-expand-posts');
+let displayMenu = false;
+let displayPosts = false;
 
 document.body.addEventListener('click', handleClick);
 
 function handleClick(e) {
     if (e.target.id === 'menu-btn' | e.target.id === 'close-menu-btn') {
-        menuBar.classList.toggle('hidden');
+        !displayMenu ? menuBar.style.display = 'block' : menuBar.style.display = 'none';
+        displayMenu = !displayMenu;
     }
 
     if (e.target.id === 'btn-expand-posts') {
-        hiddenPosts.classList.toggle('hidden');
+        for (let post of hiddenPosts) {
+            displayPosts ? post.style.display = 'block' : post.style.display = 'none'
+        };
 
-        (!hiddenPosts.classList.length) ? (btnExpandPosts.textContent = 'Show Less') : (btnExpandPosts.textContent = 'View More');
+        displayPosts = !displayPosts;
+
+        (!displayPosts) ? (btnExpandPosts.textContent = 'Show Less') : (btnExpandPosts.textContent = 'View More');
     }
 }
 
-window.addEventListener('resize', function () {
-    if (this.window.innerWidth >= 480) {
-        menuBar.className = ''
-    }
-    else { menuBar.className = 'hidden'}
-})
+// window.addEventListener('resize', function () {
+//     if (this.window.innerWidth >= 480) {
+//         menuBar.className = '';
+        
+//     }
+//     else { menuBar.className = 'hidden'}
+// })

@@ -13,10 +13,6 @@ body {
     display: flex;
 }
 
-.hidden {
-    display: none;
-}
-
 .border {
     border-bottom: 1px solid #ececec;
 }
@@ -48,6 +44,7 @@ nav {
     position: absolute; 
     top: 0;
     right: 0;
+    display: none;
 }
 
 nav > ul {
@@ -111,6 +108,10 @@ ul > li {
     margin: 0.2em 0;
     font-size: 1.5rem;
     color: #141414;
+}
+
+.hidden {
+    display: none;
 }
 
 footer {
@@ -198,22 +199,18 @@ footer {
         padding: 1em 0;
     }
 
-    #hidden-posts {
-        display: flex;
-    }
-
     .blog-post {
         width: 30%;
     }
 
     #menu-btn,
-    .close-menu-btn,
-    #btn-expand-posts {
+    .close-menu-btn {
         display: none;
     }
 
     nav {
         background-color: inherit;
+        display: block;
         position: static;
         width: 210px;
         height: auto;
