@@ -1,0 +1,22 @@
+/* Layout */
+
+.main-subtitle,
+.main-title,
+.main-body {
+    margin: 0;
+}
+
+.main-subtitle {
+    font-size: 0.9rem;
+}
+
+.main-title {
+    font-size: 2rem;
+    margin: 0.4em 0;
+}
+
+.main-img {
+    display: block;
+    width: 100%;
+    margin: 1.8em 0;
+}
