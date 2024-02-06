@@ -17,6 +17,11 @@ body {
     display: none;
 }
 
+.border {
+    border-bottom: 1px solid #ececec;
+}
+
+
 /* Layout */
 
 header {
@@ -38,7 +43,7 @@ header {
 nav {
     background-color: #202020;
     width: 150px;
-    height: 60vh;
+    height: 40vh;
     position: absolute; 
     top: 0;
     right: 0;
@@ -52,7 +57,6 @@ nav > ul {
 
 ul > li {
     margin-bottom: 0.5em;
-    border-bottom: 1px solid #ececec;
 }
 
 .hero {
@@ -107,6 +111,24 @@ ul > li {
     color: #141414;
 }
 
+footer {
+    background-color: #202020;
+    text-align: center;
+    padding: 1.8em 0;
+}
+
+.footer-title {
+    color: #ececec;
+    font-size: 0.9rem;
+    margin: 0 0 0.3em;
+}
+
+.copyright {
+    color: #d7d7d7;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
 /* Buttons & Links */
 
 #menu-btn {
@@ -126,6 +148,7 @@ ul > li {
     color: #ececec;
     font-size: 1.1rem;
     text-decoration: none;
+    cursor: default;
 }
 
 #btn-expand-posts {
@@ -143,8 +166,8 @@ ul > li {
 #menu-btn:hover,
 #btn-expand-posts:hover,
 .close-menu-btn:hover,
-.nav-link:hover,
-.nav-link:active {
+.hover:hover,
+.hover:active {
     cursor: pointer;
     opacity: 0.7;
 }
