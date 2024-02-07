@@ -14,19 +14,11 @@ function handleClick(e) {
 
     if (e.target.id === 'btn-expand-posts') {
         for (let post of hiddenPosts) {
-            displayPosts ? post.style.display = 'block' : post.style.display = 'none'
+            !displayPosts ? post.style.display = 'block' : post.style.display = 'none'
         };
 
         displayPosts = !displayPosts;
 
-        (!displayPosts) ? (btnExpandPosts.textContent = 'Show Less') : (btnExpandPosts.textContent = 'View More');
+        (displayPosts) ? (btnExpandPosts.textContent = 'Show Less') : (btnExpandPosts.textContent = 'View More');
     }
 }
-
-// window.addEventListener('resize', function () {
-//     if (this.window.innerWidth >= 480) {
-//         menuBar.className = '';
-        
-//     }
-//     else { menuBar.className = 'hidden'}
-// })

@@ -24,6 +24,7 @@ header {
     padding: 0.8em 1.2em;
     align-items: center;
     position: relative;
+    background-color: #fff;
 }
 
 .site-logo {
@@ -187,20 +188,21 @@ footer {
 /* Media Queries */
 
 @media (min-width: 480px) {
-    main {
+    body {
         background-color: #fafafa;
     }
 
     .posts {
         display: flex;
         flex-wrap: wrap;
-        width: 90%;
+        width: 95%;
+        max-width: 1600px;
         margin: 0 auto;
         padding: 1em 0;
     }
 
     .blog-post {
-        width: 30%;
+        width: 40%;
     }
 
     #menu-btn,
@@ -234,5 +236,11 @@ footer {
 
     .border {
         border-bottom: 1px solid #090909;
+    }
+}
+
+@media (min-width: 768px) {
+    .blog-post {
+        width: 30%;
     }
 }
