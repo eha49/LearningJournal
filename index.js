@@ -8,7 +8,7 @@ document.body.addEventListener('click', handleClick);
 
 function handleClick(e) {
     if (e.target.id === 'menu-btn' | e.target.id === 'close-menu-btn') {
-        !displayMenu ? menuBar.style.display = 'block' : menuBar.style.display = 'none';
+        !displayMenu ? menuBar.style.display = 'block' : menuBar.style.display = '';
         displayMenu = !displayMenu;
     }
 
